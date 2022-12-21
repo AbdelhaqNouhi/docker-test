@@ -95,7 +95,7 @@ services:
 ```bash
   docker-compose up
 ```
-## now all the containers run together
+#### now all the containers run together
 
 
 *enjoy*
