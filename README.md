@@ -1,5 +1,8 @@
 ## Docker
 
+package software so it can run on any hardware
+
+
 in order to understand how that process works there are three things
 that you absolutely must  know 
 
