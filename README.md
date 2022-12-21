@@ -1,19 +1,19 @@
 ## Docker
 
-in oder to understand how that process works there are three things
+in order to understand how that process works there are three things
 that you absolutely must  know 
 
 
-**dockerfile:**  is a blueprint for building a docker image 
+**docker file:**  is a blueprint for building a docker image 
 
-**image:**  is a ttemplate for running docker container
+**image:**  is a template for running the docker container
 
 **container:**  is a running process
 
 
-## How to build project 
+## How to build a project 
 
-*create a docker file*
+*Create a docker file*
 
 ```bash
   mkdir Dockerfile
@@ -29,7 +29,7 @@ WORKDIR /src
 
 COPY package*.json ./
 RUN npm install
-COPY . .
+COPY .  .
 
 ENV PORT=3000
 EXPOSE 3000
@@ -57,21 +57,21 @@ docker run -p 8000:3000 --name docker-express docker-image-express
 
 
 ## volumes 
-is a dedicated folder on the host machine and insed 
+is a dedicated folder on the host machine and insured 
 this folder a container can create files that can be remounted into
 future containers or multiple containers at the same time
 
-## docker compose
+## docker-compose
 is a tool for running multiple docker containers 
-at the sametime 
+at the same time 
 
-*create a docker compose*
+*Create a docker-compose*
 
 ```bash
   mkdir docker-compose.yml
 ```
 
-*Here's an example of a simple docker compose*
+*Here's an example of a simple docker-compose*
 
 
 ```bash
